@@ -1,0 +1,45 @@
+﻿@model IEnumerable<eLibrary.Models.Book>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to my eLibrary</h1>
+        <h3>LeaderBoard</h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Author)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i <5; i++)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => model.ElementAt(i).Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.ElementAt(i).Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.ElementAt(i).Author)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
