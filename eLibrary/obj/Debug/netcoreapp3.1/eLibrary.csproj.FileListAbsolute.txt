@@ -217,3 +217,4 @@ C:\Users\Besar\source\repos\eLibrary\eLibrary\obj\Debug\netcoreapp3.1\Razor\View
 C:\Users\Besar\source\repos\eLibrary\eLibrary\obj\Debug\netcoreapp3.1\eLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Besar\source\repos\eLibrary\eLibrary\obj\Debug\netcoreapp3.1\eLibrary.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Besar\source\repos\eLibrary\eLibrary\obj\Debug\netcoreapp3.1\eLibrary.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Besar\source\repos\eLibrary\eLibrary\obj\Debug\netcoreapp3.1\Razor\Views\Search\Index.cshtml.g.cs
