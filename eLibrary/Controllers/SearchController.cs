@@ -22,12 +22,13 @@ namespace eLibrary.Controllers
         public async Task<IActionResult> Index(string Request)
         {
             var Search = from m in _context.Book select m;
-
+            var count = 0;
 
             if (!String.IsNullOrEmpty(Request))
             {
-                Search = Search.Where(s => s.Name.ToLower().Contains(Request.ToLower()) || s.Description.ToLower().Contains(Request.ToLower()) || s.Author.ToLower().Contains(Request.ToLower()));            
-            }   
+                Search = Search.Where(s => s.Name.ToLower().Contains(Request.ToLower()) || s.Description.ToLower().Contains(Request.ToLower()) || s.Author.ToLower().Contains(Request.ToLower()));
+                count++;
+            }
 
             return View(await Search.ToListAsync());
         }
